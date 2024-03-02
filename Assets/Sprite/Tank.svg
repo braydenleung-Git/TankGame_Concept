@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#282828;}
+	.st1{fill:#045100;}
+	.st2{fill:#003E1F;}
+	.st3{fill:#545454;}
+	.st4{fill:#424242;}
+	.st5{clip-path:url(#SVGID_00000076596473490401447210000007562668663719489677_);}
+	.st6{stroke:#000000;stroke-width:0.6667;stroke-miterlimit:10;}
+</style>
+<polygon class="st0" points="88,75 13,75 8.4,66 92.6,66 "/>
+<g>
+	<path class="st1" d="M26.6,51.6v-9c0-1.5,1.2-2.7,2.7-2.7h15.4c1.5,0,2.7,1.2,2.7,2.7v9H26.6z"/>
+	<path class="st2" d="M44.7,40.4c1.2,0,2.1,1,2.1,2.1V51H27.2v-8.5c0-1.2,1-2.1,2.1-2.1L44.7,40.4 M44.7,39.3H29.4
+		c-1.8,0-3.3,1.5-3.3,3.3v9.6H48v-9.6C48,40.8,46.6,39.3,44.7,39.3L44.7,39.3z"/>
+</g>
+<g>
+	<polygon class="st1" points="9.4,65.5 20.5,51.1 80.5,51.1 91.6,65.5 	"/>
+	<path class="st2" d="M80.3,51.6L90.5,65h-80l10.2-13.4H80.3 M80.8,50.5H20.2L8.4,66h84.3L80.8,50.5L80.8,50.5z"/>
+</g>
+<g>
+	<g>
+		<path class="st3" d="M19.5,80c-3,0-5.5-2.5-5.5-5.5s2.5-5.5,5.5-5.5h62c3,0,5.5,2.5,5.5,5.5S84.5,80,81.5,80H19.5z"/>
+		<path class="st4" d="M81.5,70c2.5,0,4.5,2,4.5,4.5S84,79,81.5,79h-62C17,79,15,77,15,74.5s2-4.5,4.5-4.5H81.5 M81.5,68h-62
+			c-3.6,0-6.5,2.9-6.5,6.5l0,0c0,3.6,2.9,6.5,6.5,6.5h62c3.6,0,6.5-2.9,6.5-6.5l0,0C88,70.9,85.1,68,81.5,68L81.5,68z"/>
+	</g>
+	<g>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" x="15.2" y="70.2" width="71.3" height="10.1"/>
+			</defs>
+			<clipPath id="SVGID_00000163057720260974905370000013460140200088486572_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_00000163057720260974905370000013460140200088486572_);">
+				<g>
+					<circle class="st6" cx="19.5" cy="74.5" r="4"/>
+				</g>
+				<g>
+					<circle class="st6" cx="40.2" cy="74.5" r="4"/>
+				</g>
+				<g>
+					<circle class="st6" cx="60.8" cy="74.5" r="4"/>
+				</g>
+				<g>
+					<circle class="st6" cx="81.5" cy="74.5" r="4"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
