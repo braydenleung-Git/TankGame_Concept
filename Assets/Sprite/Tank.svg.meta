@@ -37,18 +37,45 @@ ScriptedImporter:
   preserveSVGImageAspect: 0
   useSVGPixelsPerUnit: 0
   spriteData:
-    TessellationDetail: 0
+    TessellationDetail: 1
     SpriteRect:
-      name: 
+      name: TankSprite
       originalName: 
-      pivot: {x: 0, y: 0}
-      alignment: 0
+      pivot: {x: -0, y: 1}
+      alignment: 9
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 100
+        height: 100
       spriteID: 63ace637c35cb4a21830b920aeb66bdd
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: 42.739998, y: -15.939999}
+      - {x: 30.839996, y: -0.44000244}
+      - {x: -1.9806404, y: -0.4604721}
+      - {x: -1.9799042, y: 7.987667}
+      - {x: -2.2523842, y: 8.930058}
+      - {x: -2.8196716, y: 9.739899}
+      - {x: -3.5175285, y: 10.268684}
+      - {x: -4.485096, y: 10.682171}
+      - {x: -21.37784, y: 10.697525}
+      - {x: -22.388912, y: 10.248714}
+      - {x: -23.19999, y: 9.559906}
+      - {x: -23.746462, y: 8.688377}
+      - {x: -23.989264, y: 7.712269}
+      - {x: -23.960001, y: -0.44000244}
+      - {x: -29.8, y: -0.45999908}
+      - {x: -41.657833, y: -15.982658}
+      - {x: -37.04, y: -24.98}
+      - {x: -36.486507, y: -27.289843}
+      - {x: -35.20704, y: -29.142462}
+      - {x: -33.3034, y: -30.439838}
+      - {x: -31.199755, y: -30.997215}
+      - {x: 32.731552, y: -30.939022}
+      - {x: 34.783516, y: -30.186602}
+      - {x: 36.475494, y: -28.834177}
+      - {x: 37.591103, y: -27.026152}
+      - {x: 38.059204, y: -24.973919}
