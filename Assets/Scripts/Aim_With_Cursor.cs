@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Aim_With_Cursor : MonoBehaviour
 {
-    public float maxRotationAngle;
-    public float minRotationAngle;
+    public float maxRotationAngle = 45f;
+    public float minRotationAngle = -3f;
     // Update is called once per frame
     void Update()
     {
