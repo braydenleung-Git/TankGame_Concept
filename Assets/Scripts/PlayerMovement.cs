@@ -5,17 +5,17 @@ using UnityEngine;
 public class PlayerMovment : MonoBehaviour
 {
     public float speed = 10f; //Controls velocity multiplier
-    Rigidbody rb;
+    Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
         float xMove = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector3(xMove, rb.velocity.y, transform.position.z) * speed;
+        rb.velocity = new Vector2(xMove, rb.velocity.y) * speed;
     }
 }
