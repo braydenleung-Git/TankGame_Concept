@@ -1,21 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovment : MonoBehaviour
 {
-    public float speed = 10f; //Controls velocity multiplier
-    Rigidbody2D rb;
+    public float speed; //Controls velocity multiplier
+    public Rigidbody rb;
+    public Vector2 movement;
+
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = this.GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        float xMove = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(xMove, rb.velocity.y) * speed;
+        movement = new Vector2(Input.GetAxis("Horizontal"),Input.GetAxis("Vertical"));
+    }
+    //update on each physics frame
+    void FixedUpdate()
+    {
+        move(movement);
+    }
+    void move(Vector2 direction){
+        rb.MovePosition((Vector2)transform.position + (direction * speed * Time.deltaTime));
     }
 }
