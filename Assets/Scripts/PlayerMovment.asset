@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: PlayerMovment
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":null,"label":null,"summary":null,"hideLabel":false}],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Tankmovement
+      control","summary":null,"pan":{"x":12.945,"y":-96.93616},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-287.0,"y":-44.0},"guid":"822cccf0-c664-4ef9-84d0-921b64a2fab1","$version":"A","$type":"Unity.VisualScripting.FixedUpdate"},{"kind":"Object","defaultValues":{"name":{"$content":"rb","$type":"System.String"},"object":null},"position":{"x":27.0,"y":-226.0},"guid":"986397c7-c6d9-4f30-8e2f-c318be0a1b3a","$version":"A","$type":"Unity.VisualScripting.SetVariable"}],"$version":"A"}}'
+    _objectReferences: []

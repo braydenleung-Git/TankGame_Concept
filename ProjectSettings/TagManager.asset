@@ -9,12 +9,12 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Map
   - Water
   - UI
   - 
-  - 
-  - 
+  - Projectile
+  - Enemy
   - 
   - 
   - 
@@ -39,6 +39,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 778722233
+    locked: 0
+  - name: Maps
+    uniqueID: 1764835455
+    locked: 0
+  - name: Objects
+    uniqueID: 4262930115
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

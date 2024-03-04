@@ -9,17 +9,17 @@ ScriptedImporter:
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
-  texturedSpriteMeshType: 0
-  svgPixelsPerUnit: 100
-  gradientResolution: 64
+  texturedSpriteMeshType: 1
+  svgPixelsPerUnit: 1000
+  gradientResolution: 128
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
-  viewportOptions: 0
+  viewportOptions: 1
   preserveViewport: 0
   advancedMode: 0
-  predefinedResolutionIndex: 1
-  targetResolution: 1080
+  predefinedResolutionIndex: 0
+  targetResolution: 2160
   resolutionMultiplier: 1
   stepDistance: 10
   samplingStepDistance: 100
@@ -28,27 +28,35 @@ ScriptedImporter:
   maxTangentAngleEnabled: 0
   maxTangentAngle: 5
   keepTextureAspectRatio: 1
-  textureSize: 256
+  textureSize: 1000
   textureWidth: 256
   textureHeight: 256
   wrapMode: 0
-  filterMode: 1
-  sampleCount: 4
+  filterMode: 2
+  sampleCount: 8
   preserveSVGImageAspect: 0
-  useSVGPixelsPerUnit: 0
+  useSVGPixelsPerUnit: 1
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: BulletSprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 100
+        height: 100
       spriteID: 126fbb1a753e443549649dcadae489b6
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: -24.619999, y: 10.080002}
+      - {x: -24.619999, y: -9.98}
+      - {x: 10.818352, y: -9.935215}
+      - {x: 24.412178, y: -0.89982986}
+      - {x: 24.809807, y: -0.024177551}
+      - {x: 24.516472, y: 0.88846207}
+      - {x: 10.800255, y: 10.098835}
