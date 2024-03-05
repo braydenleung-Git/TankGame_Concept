@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BulletBehavior : MonoBehaviour
 {
+   
     [Header("General Bullet Stats")]
     [SerializeField] private LayerMask whatDestroyBullet;
     [SerializeField] private float destroyAfter = 10f;
@@ -24,8 +25,9 @@ public class BulletBehavior : MonoBehaviour
     }
     public BulletType bulletType;
 
-    private void start()
+    private void Start()
     {
+        //GetComponent<SpriteRenderer>().enabled = true;
         rb = GetComponent<Rigidbody2D>();
         SetRBStats();
         SetDestroyTime();

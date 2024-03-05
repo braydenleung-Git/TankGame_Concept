@@ -3,15 +3,16 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovment : MonoBehaviour
 {
+    private Vector2 movement;//horizontal movement
     public float speed; //Controls velocity multiplier
-    public InputAction moveAction;
-    private Rigidbody2D rb;
-    public Vector2 movement;
+    public InputAction moveAction;//imports the user input to the script
+    [SerializeField]private Rigidbody2D rb;
+    //[SerializeField]private Transform groundCheck;//used for jumping, not needed
+    [SerializeField]private LayerMask groundLayer;//might not be needed, kept just in case for further usage
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = this.GetComponent<Rigidbody2D>();
         moveAction.Enable();
     }
 
@@ -22,12 +23,7 @@ public class PlayerMovment : MonoBehaviour
     //update on each physics frame
     void FixedUpdate()
     {
-        movement.y = 0f;
-        //Debug.Log(movement);
-        move(movement);
+        rb.velocity = new Vector2(movement.x * speed, rb.velocity.y);
     }
-    void move(Vector2 direction){
-        //the current position + 
-        rb.MovePosition((Vector2)transform.position + (direction * Time.fixedDeltaTime * speed ));
-    }
+
 }

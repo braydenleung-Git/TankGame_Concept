@@ -5,11 +5,12 @@ public class Bound_Handlling : MonoBehaviour
     private Vector2 screenBounds;
     private float objectWidth;
     private float objectHeight;
+    [SerializeField] GameObject tankObject;
     void Start()
     {
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width,Screen.height, Camera.main.transform.position.z));
-        objectWidth = transform.GetComponent<SpriteRenderer>().bounds.size.x/2;
-        objectHeight = transform.GetComponent<SpriteRenderer>().bounds.size.y/2;
+        objectWidth = tankObject.transform.GetComponent<SpriteRenderer>().bounds.size.x/2;
+        objectHeight = tankObject.transform.GetComponent<SpriteRenderer>().bounds.size.y/2;
     }
 
     void LateUpdate()
