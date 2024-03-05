@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 81779
+  controlID: 91397
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -502,7 +502,7 @@ MonoBehaviour:
       sizeOverriden: 0
     m_OverlaysVisible: 1
   m_WindowGUID: d69a67902db7f994ca099bec79d22ce1
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 0
   m_SceneLighting: 1
@@ -511,9 +511,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.3435112, y: -0.9340856, z: -2.2027495}
+    m_Target: {x: 4.6264257, y: 0.037638903, z: 1}
     speed: 2
-    m_Value: {x: -0.3435112, y: -0.9340856, z: -2.2027495}
+    m_Value: {x: 4.6264257, y: 0.037638903, z: 1}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -563,9 +563,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.2081046
+    m_Target: 6.7064056
     speed: 2
-    m_Value: 5.2081046
+    m_Value: 6.7064056
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -614,7 +614,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 81780
+  controlID: 91398
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -665,7 +665,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 81781
+  controlID: 91399
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -737,7 +737,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Settings
+    - Assets/Materials
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -745,16 +745,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Settings
+  - Assets/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/brayden/Desktop/TankGame_Concept
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6a730000
-    m_LastClickedID: 29546
-    m_ExpandedIDs: 00000000687300006a73000000ca9a3bffffff7f
+    m_SelectedIDs: 6ec00000
+    m_LastClickedID: 49262
+    m_ExpandedIDs: 00000000687300006a73000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -782,7 +782,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000687300006a73000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000687300006a73000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -826,7 +826,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 8}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -979,18 +979,18 @@ MonoBehaviour:
       y: 21
       width: 863
       height: 485.5
-    m_Scale: {x: 0.8989583, y: 0.8989583}
-    m_Translation: {x: 431.5, y: 242.75}
+    m_Scale: {x: 10, y: 10}
+    m_Translation: {x: 431.5, y: 242.74988}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -480
-      y: -270.03476
-      width: 960
-      height: 540.0695
+      x: -43.15
+      y: -24.274988
+      width: 86.3
+      height: 48.55
     m_MinimalGUI: 1
   m_defaultScale: 0.8989583
   m_LastWindowPixelSize: {x: 1726, y: 1013}
@@ -1023,7 +1023,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 81775
+  controlID: 91393
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1137,8 +1137,8 @@ MonoBehaviour:
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
   currentTrackingStatusHasUpdate: 0
-  currentStatusEntriesHasUpdate: 0
-  repositoryProgressHasUpdate: 0
+  currentStatusEntriesHasUpdate: 1
+  repositoryProgressHasUpdate: 1
   appManagerProgressHasUpdate: 1
   changeTab: 3
   activeTab: 3
@@ -1323,20 +1323,267 @@ MonoBehaviour:
     - name: origin/master
       tracking: '[None]'
   changesView:
-    currentBranchHasUpdate: 1
+    currentBranchHasUpdate: 0
     currentStatusEntriesHasUpdate: 1
     currentLocksHasUpdate: 1
     commitBody: 
     commitMessage: 
     currentBranch: master
-    treeScroll: {x: 0, y: 347.99988}
+    treeScroll: {x: 0, y: 0}
     treeChanges:
       assets:
-        keys: []
-        values: []
+        keys:
+        - 00000000000000001000000000000000
+        - dd3eb4a421f3a432691493ca18158661
+        - 8c9cfa26abfee488c85f1582747f6a02
+        - c981f961b14124013a0d36a817c8321f
+        - 7fecafa2b480847d08f438ed90747187
+        - c9035d3b1ac7645fca7a8d4a506bf4e6
+        - 14c97915a497e4fc699cbd1cae99a762
+        - ab5a5f18650c14d9ca8bfed25c85c416
+        values:
+        - path: Assets
+          label: Assets
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Scenes
+          label: Scenes
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Scenes/SampleScene.unity
+          label: SampleScene.unity
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Scenes/SampleScene.unity
+            fullPath: /Users/brayden/Desktop/TankGame_Concept/Assets/Scenes/SampleScene.unity
+            projectPath: Assets/Scenes/SampleScene.unity
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets/Scripts
+          label: Scripts
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Scripts/BulletBehavior.cs
+          label: BulletBehavior.cs
+          level: 2
+          isFolder: 0
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Scripts/BulletBehavior.cs
+            fullPath: /Users/brayden/Desktop/TankGame_Concept/Assets/Scripts/BulletBehavior.cs
+            projectPath: Assets/Scripts/BulletBehavior.cs
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 3
+        - path: Assets/Unity.VisualScripting.Generated
+          label: Unity.VisualScripting.Generated
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow
+          label: VisualScripting.Flow
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+          label: UnitOptions.db
+          level: 3
+          isFolder: 0
+          isContainer: 1
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+            fullPath: /Users/brayden/Desktop/TankGame_Concept/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+            projectPath: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+            originalPath: 
+            indexStatus: 1
+            workTreeStatus: 1
       folders:
-        keys: []
-        values: []
+        keys:
+        - Assets
+        - Assets/Scenes
+        - Assets/Scripts
+        - Assets/Unity.VisualScripting.Generated
+        - Assets/Unity.VisualScripting.Generated/VisualScripting.Flow
+        values:
+        - path: Assets
+          label: Assets
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Scenes
+          label: Scenes
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Scripts
+          label: Scripts
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Unity.VisualScripting.Generated
+          label: Unity.VisualScripting.Generated
+          level: 1
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
+        - path: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow
+          label: VisualScripting.Flow
+          level: 2
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 1
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
       checkedFileNodes:
         keys: []
         values: []
@@ -1365,6 +1612,204 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
+      - path: Assets
+        label: Assets
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Scenes
+        label: Scenes
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Scenes/SampleScene.unity
+        label: SampleScene.unity
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Scenes/SampleScene.unity
+          fullPath: /Users/brayden/Desktop/TankGame_Concept/Assets/Scenes/SampleScene.unity
+          projectPath: Assets/Scenes/SampleScene.unity
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets/Scripts
+        label: Scripts
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Scripts/BulletBehavior.cs
+        label: BulletBehavior.cs
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Scripts/BulletBehavior.cs
+          fullPath: /Users/brayden/Desktop/TankGame_Concept/Assets/Scripts/BulletBehavior.cs
+          projectPath: Assets/Scripts/BulletBehavior.cs
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 3
+      - path: Assets/Unity.VisualScripting.Generated.meta
+        label: Unity.VisualScripting.Generated.meta
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Unity.VisualScripting.Generated.meta
+          fullPath: /Users/brayden/Desktop/TankGame_Concept/Assets/Unity.VisualScripting.Generated.meta
+          projectPath: Assets/Unity.VisualScripting.Generated.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Unity.VisualScripting.Generated
+        label: Unity.VisualScripting.Generated
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow.meta
+        label: VisualScripting.Flow.meta
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow.meta
+          fullPath: /Users/brayden/Desktop/TankGame_Concept/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow.meta
+          projectPath: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow
+        label: VisualScripting.Flow
+        level: 2
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+        label: UnitOptions.db
+        level: 3
+        isFolder: 0
+        isContainer: 1
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+          fullPath: /Users/brayden/Desktop/TankGame_Concept/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+          projectPath: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
+      - path: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+        label: UnitOptions.db.meta
+        level: 4
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 1
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+          fullPath: /Users/brayden/Desktop/TankGame_Concept/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+          projectPath: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+          originalPath: 
+          indexStatus: 1
+          workTreeStatus: 1
       selectedNode:
         path: 
         label: 
@@ -1384,16 +1829,52 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-    gitStatusEntries: []
-    changedFilesText: No changed files
+    gitStatusEntries:
+    - path: Assets/Scenes/SampleScene.unity
+      fullPath: /Users/brayden/Desktop/TankGame_Concept/Assets/Scenes/SampleScene.unity
+      projectPath: Assets/Scenes/SampleScene.unity
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets/Scripts/BulletBehavior.cs
+      fullPath: /Users/brayden/Desktop/TankGame_Concept/Assets/Scripts/BulletBehavior.cs
+      projectPath: Assets/Scripts/BulletBehavior.cs
+      originalPath: 
+      indexStatus: 0
+      workTreeStatus: 3
+    - path: Assets/Unity.VisualScripting.Generated.meta
+      fullPath: /Users/brayden/Desktop/TankGame_Concept/Assets/Unity.VisualScripting.Generated.meta
+      projectPath: Assets/Unity.VisualScripting.Generated.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow.meta
+      fullPath: /Users/brayden/Desktop/TankGame_Concept/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow.meta
+      projectPath: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+      fullPath: /Users/brayden/Desktop/TankGame_Concept/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+      projectPath: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    - path: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+      fullPath: /Users/brayden/Desktop/TankGame_Concept/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+      projectPath: Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+      originalPath: 
+      indexStatus: 1
+      workTreeStatus: 1
+    changedFilesText: 6 changed files
     lastCurrentBranchChangedEvent:
       updatedTimeString: 2024-03-04T21:46:54.508-05:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2024-03-04T21:47:05.008-05:00
+      updatedTimeString: 2024-03-05T10:08:02.609-05:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2024-03-04T21:46:55.771-05:00
+      updatedTimeString: 2024-03-05T10:07:39.140-05:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -7798,9 +8279,9 @@ MonoBehaviour:
   currentRemoteName: origin
   currentBranch: master
   currentRemoteUrl: https://github.com/braydenleung-Git/TankGame_Concept
-  statusAhead: 0
+  statusAhead: 1
   statusBehind: 0
-  hasItemsToCommit: 0
+  hasItemsToCommit: 1
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: master
@@ -7814,10 +8295,10 @@ MonoBehaviour:
     updatedTimeString: 2024-03-03T21:45:48.908-05:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2024-03-03T21:45:48.846-05:00
+    updatedTimeString: 2024-03-05T07:38:02.926-05:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2024-03-03T21:45:31.325-05:00
+    updatedTimeString: 2024-03-05T08:13:22.881-05:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -7905,7 +8386,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f2eafcff18fbfffff4fffffff4720000047300000a7300001c730000ccbf0000e6bf000020c00000
+      m_ExpandedIDs: f2eafcff18fbfffff4fffffff4720000047300000a7300001c730000ccbf0000e6bf0000ecbf000020c00000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

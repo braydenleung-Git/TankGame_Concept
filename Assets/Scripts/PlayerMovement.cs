@@ -23,7 +23,14 @@ public class PlayerMovment : MonoBehaviour
     //update on each physics frame
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(movement.x * speed, rb.velocity.y);
+        float gradSpeed = speed / 5;
+        speed = 0f;
+        for(int i = 0; i < 5; i++)
+        {
+            speed += gradSpeed;
+            rb.velocity = new Vector2(movement.x * speed, rb.velocity.y);
+        }
+        
     }
 
 }

@@ -1,11 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+/*
+ Current issues :
+    bullet destroy's itself after the timer, instead of "spawning" other instances of the bullet
+ */
 
 public class BulletBehavior : MonoBehaviour
 {
-   
+    public enum BulletType
+    {
+        Normal,
+        Physics,
+        Dummy
+    }
+    [Header("Game Object passthrough")]
+    [SerializeField] private GameObject bullet;
+
     [Header("General Bullet Stats")]
+    [SerializeField] public BulletType bulletType;
     [SerializeField] private LayerMask whatDestroyBullet;
     [SerializeField] private float destroyAfter = 10f;
     
@@ -18,24 +30,19 @@ public class BulletBehavior : MonoBehaviour
     [SerializeField] private float gravityValue = 3f;
     private Rigidbody2D rb;
 
-    public enum BulletType
-    {
-        Normal,
-        Physics
-    }
-    public BulletType bulletType;
+   
 
     private void Start()
     {
-        //GetComponent<SpriteRenderer>().enabled = true;
-        rb = GetComponent<Rigidbody2D>();
-        SetRBStats();
+        rb = bullet.GetComponent<Rigidbody2D>();
         SetDestroyTime();
         //set velocity based on bullet type 
         InitializeBulletStats();
     }
     private void InitializeBulletStats()
     {
+        Debug.Log("Bullet type:" + bulletType);
+        Debug.Log(BulletType.Normal);
         switch(bulletType)
         {
             case BulletType.Normal:
@@ -47,6 +54,9 @@ public class BulletBehavior : MonoBehaviour
             rb.gravityScale = gravityValue;
             SetPhysicsVelocity();
             break;
+
+            case BulletType.Dummy:
+            break;
         }
     }
 
@@ -55,30 +65,27 @@ public class BulletBehavior : MonoBehaviour
         //is the collision within the whatDestroyBullet layermask;
         if((whatDestroyBullet.value & (1<<collision.gameObject.layer))>0)
         {
-            Destroy(gameObject);
+            Destroy(bullet);
         }
     }
     private void SetPhysicsVelocity()
     {
-        rb.velocity = transform.right * physicsSpeed;
+        rb.velocity = bullet.transform.right * physicsSpeed;
     }
     private void SetStraightVelocity()
     {
-        rb.velocity = transform.right * normalSpeed;
+        rb.velocity = bullet.transform.right * normalSpeed;
     }
     private void SetDestroyTime()
     {
-        Destroy(gameObject,destroyAfter);
+        Destroy(this,destroyAfter);
     }
-    private void SetRBStats()
-    {
-        
-    }
+   
     private void FixedUpdate()
     {
         if(bulletType == BulletType.Physics)
         {
-            transform.right = rb.velocity;
+            bullet.transform.right = rb.velocity;
         }
     }
 }

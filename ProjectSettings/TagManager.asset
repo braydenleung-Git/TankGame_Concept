@@ -45,6 +45,9 @@ TagManager:
   - name: Maps
     uniqueID: 1764835455
     locked: 0
+  - name: Projectile
+    uniqueID: 2765176939
+    locked: 0
   - name: Objects
     uniqueID: 4262930115
     locked: 0
