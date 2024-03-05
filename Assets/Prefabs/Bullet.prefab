@@ -207,11 +207,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 7080136738498453851}
-  bulletType: 1
+  bulletType: 0
   whatDestroyBullet:
     serializedVersion: 2
     m_Bits: 264
   destroyAfter: 3
+  scaleChanges: 7
   normalSpeed: 10
-  physicsSpeed: 15
-  gravityValue: 4
+  physicsSpeed: 20
+  gravityValue: 3

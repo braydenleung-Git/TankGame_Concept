@@ -20,6 +20,7 @@ public class BulletBehavior : MonoBehaviour
     [SerializeField] public BulletType bulletType;
     [SerializeField] private LayerMask whatDestroyBullet;
     [SerializeField] private float destroyAfter = 10f;
+    [SerializeField] private float scaleChanges = 10f;
     
     
     [Header("Normal Bullet Stats")]
@@ -34,6 +35,7 @@ public class BulletBehavior : MonoBehaviour
 
     private void Start()
     {
+        this.transform.localScale = new Vector3(this.transform.localScale.x+scaleChanges, this.transform.localScale.y + scaleChanges, this.transform.localScale.z + scaleChanges);
         rb = bullet.GetComponent<Rigidbody2D>();
         SetDestroyTime();
         //set velocity based on bullet type 
@@ -41,8 +43,8 @@ public class BulletBehavior : MonoBehaviour
     }
     private void InitializeBulletStats()
     {
-        Debug.Log("Bullet type:" + bulletType);
-        Debug.Log(BulletType.Normal);
+        //Debug.Log("Bullet type:" + bulletType);
+        //Debug.Log(BulletType.Normal);
         switch(bulletType)
         {
             case BulletType.Normal:
@@ -78,7 +80,7 @@ public class BulletBehavior : MonoBehaviour
     }
     private void SetDestroyTime()
     {
-        Destroy(this,destroyAfter);
+        Destroy(bullet,destroyAfter);
     }
    
     private void FixedUpdate()
