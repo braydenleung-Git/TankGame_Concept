@@ -50,7 +50,7 @@ public class AimAndShoot : MonoBehaviour
         if(fireAction.triggered)
         {
             //spawn bullet
-            Debug.Log("Bullets triggered ");
+            //Debug.Log("Bullets triggered ");
             bulletInstance = Instantiate(bullet, bulletSpawnPoint.position,barrelPivot.transform.rotation);
         }
     }
