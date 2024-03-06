@@ -17,7 +17,7 @@ public class BulletBehavior : MonoBehaviour
     [SerializeField] private GameObject bullet;
 
     [Header("General Bullet Stats")]
-    [SerializeField] public BulletType bulletType;
+    [SerializeField] public static BulletType bulletType;
     [SerializeField] private LayerMask whatDestroyBullet;
     [SerializeField] private float destroyAfter = 10f;
     [SerializeField] private float scaleChanges = 10f;
@@ -35,7 +35,7 @@ public class BulletBehavior : MonoBehaviour
 
     private void Start()
     {
-        this.transform.localScale = new Vector3(this.transform.localScale.x+scaleChanges, this.transform.localScale.y + scaleChanges, this.transform.localScale.z + scaleChanges);
+        transform.localScale = new Vector3(transform.localScale.x+scaleChanges, transform.localScale.y + scaleChanges, transform.localScale.z + scaleChanges);
         rb = bullet.GetComponent<Rigidbody2D>();
         SetDestroyTime();
         //set velocity based on bullet type 
@@ -89,5 +89,9 @@ public class BulletBehavior : MonoBehaviour
         {
             bullet.transform.right = rb.velocity;
         }
+    }
+    public static void setBulletType(BulletType type)
+    {
+        bulletType = type;
     }
 }
