@@ -3,11 +3,14 @@ using UnityEngine;
 public class BulletButton : MonoBehaviour
 {
     [SerializeField] private TMPro.TMP_Text text;
+    [SerializeField] private GameObject bullet;
     private bool toggle = false;
+    private BulletBehavior script;
 
     private void Start()
     {
-        text.SetText(BulletBehavior.bulletType.ToString());
+        script = bullet.GetComponent<BulletBehavior>();
+        text.SetText(script.getBulletType().ToString());
     }
     public void OnButtonPress()
     {
@@ -15,12 +18,12 @@ public class BulletButton : MonoBehaviour
         if (toggle)
         {
             text.SetText("Normal");
-            BulletBehavior.setBulletType(BulletBehavior.BulletType.Normal);
+            script.setBulletType(BulletBehavior.BulletType.Normal);
         }
         else
         {
             text.SetText("Physics");
-            BulletBehavior.setBulletType(BulletBehavior.BulletType.Physics);
+            script.setBulletType(BulletBehavior.BulletType.Physics);
         }
     }
 }

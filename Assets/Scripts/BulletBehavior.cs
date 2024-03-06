@@ -17,7 +17,7 @@ public class BulletBehavior : MonoBehaviour
     [SerializeField] private GameObject bullet;
 
     [Header("General Bullet Stats")]
-    [SerializeField] public static BulletType bulletType;
+    [SerializeField] public BulletType bulletType;
     [SerializeField] private LayerMask whatDestroyBullet;
     [SerializeField] private float destroyAfter = 10f;
     [SerializeField] private float scaleChanges = 10f;
@@ -90,8 +90,12 @@ public class BulletBehavior : MonoBehaviour
             bullet.transform.right = rb.velocity;
         }
     }
-    public static void setBulletType(BulletType type)
+    public void setBulletType(BulletType type)
     {
         bulletType = type;
+    }
+    public BulletType getBulletType()
+    {
+        return bulletType;
     }
 }
